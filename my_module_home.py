@@ -6,6 +6,4 @@ def salary():
         result = (output_in_hours * rate) + bonus
         print(f"Заработная плата сотрудника до вычета налога: {result}")
     except ZeroDivisionError:
-        print("Не те числа")
-        result = 0
-    return result
+        return print("Не те числа")
