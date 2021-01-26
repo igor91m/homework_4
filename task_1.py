@@ -5,5 +5,5 @@
 '''
 
 from my_module_home import salary
-x = salary()
-print(x)
+total_salary = salary()
+print(total_salary)
