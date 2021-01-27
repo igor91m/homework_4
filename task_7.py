@@ -9,7 +9,7 @@
 from itertools import count
 from math import factorial
 '''
-Не могу понять как прописать с условием for el in fact(n) по самой задаче с счетчиком
+Не могу понять как прописать с условием for el in fact(n) по самой задаче с счетчиком. ПАМАГИТЕ !!! :)
 '''
 
 import math
