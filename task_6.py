@@ -10,3 +10,31 @@
 Во втором также необходимо предусмотреть условие, при котором повторение элементов списка будет прекращено.
 '''
 
+# а) Итератор, генерирующий целые числа, начиная с указанного
+from itertools import count
+for el in count(int(input("Введите целое число отсчёта: "))):
+    if el > 17:
+        break
+    print(el)
+
+# б) Итератор, повторяющий элементы некоторого списка, определенного заранее
+from itertools import cycle
+list = [777, 'AvadaKedavra', True, None]
+count = 0
+for el in cycle(list):
+    if count >= 4:
+        break
+    print(el)
+    count += 1
+'''
+Рассматривал так же самый простой вариант из методички:
+
+from itertools import cycle 
+list = [777, 'AvadaKedavra', True, None]
+iterator = cycle(list)
+ 
+print(next(iterator)) # 777
+print(next(iterator)) # AvadaKedavra
+print(next(iterator)) # True
+print(next(iterator)) # None
+'''
