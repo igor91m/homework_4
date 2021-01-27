@@ -31,6 +31,10 @@ from math import factorial
 print(f"Факториал числа: {factorial(int(input()))}")
 
 #3
+from math import factorial
+print(f"factorial(5) -> {factorial(5)}")
+
+#4
 import math
 n = int(input("Введите факториал какого числа найти: "))
 res = math.factorial(n)
