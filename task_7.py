@@ -9,14 +9,26 @@
 from itertools import count
 from math import factorial
 '''
-Не могу понять как прописать с условием for el in fact(n) по самой задаче с счетчиком. ПАМАГИТЕ !!! :)
+Не могу понять как прописать с условием for el in fact(n) по самой задаче с счетчиком.
 '''
+def fibo_gen():
+    for el in count(1):
+        yield factorial(el)
 
-import math
-print(math.factorial(5))
+gen = fibo_gen()
+x = 0
+for i in gen:
+    if x < 15:
+        print(i)
+        x += 1
+    else:
+        break
 
 '''
 Другие примеры:
+#0
+import math
+print(math.factorial(5))
 
 #1
 n = int(input("Введите факториал какого числа найти: "))
